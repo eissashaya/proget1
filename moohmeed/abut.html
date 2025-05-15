@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG_20240708_031113_033.jpg">
+    <title> من هو عيسى شايع </title>
+
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/abut.css">
+</head>
+
+<body dir="rtl">
+
+    <main>
+
+      
+        <section class="hero-section" id="home">
+            <div>
+                <div>
+                    <h4 title="مرحبًا، كيف حالك؟">مرحبًا بك!</h4>
+                    <h2 class="hero-section__title">أنا <span>م/عيسى شايع</span></h2>
+                    <p class="hero-section__desc">أنا مطور ويب وعامل مستقل تحت اسم EissaCode 💻✨
+                        أختص في تصميم تجارب ويب تفاعلية وجذابة باستخدام HTML، CSS، JavaScript، Python، وFlask.</p>
+                </div>
+
+                <ul class="social-icons">
+                    <!-- أيقونات التواصل الاجتماعي -->
+                    <li>
+                        <a href="https://www.instagram.com/3d_.td/?utm_source=qr&r=nametag"><i class="fab fa-instagram"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="https://wa.me/967776295164"><i class="fab fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+
+                <div class="hero-buttons">
+                    <a href="index.html">
+                        الصفحة الرئيسية
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-img">
+                
+            </div>
+        </section>
+
+        <!-- قسم عني -->
+        <section class="about-section" id="about">
+            <div class="about-img">
+                <img src="IMG_20240708_031113_033.jpg" alt="عيسى شايع">
+            </div>
+
+            <div class="about-content">
+                <h4>من أنا</h4>
+                <h2>أنام/عيسى شايع<br> <span>مطور ويب</span></h2>
+                <p>مرحبًا! أنا عيسى شايع. 🎨💻
+                    أنا مطور ويب مستقل متخصص في تطوير الويب. أستمتع باستخدام تقنيات الويب لحل المشكلات الواقعية بطريقة مبتكرة وفعّالة.
+                    
+                    🌟 أعمل على مجموعة متنوعة من المشاريع مثل تصميم المواقع، بطاقات الأعمال، الدعوات، المنشورات، بالإضافة إلى تطوير المعارض الافتراضية ومتاجر التجارة الإلكترونية.
+                    
+                    💡 يمكنك استكشاف مشاريعي وخبراتي العملية في معرض أعمالي.
+                </p>
+            </div>
+        </section>
+
+        <!-- قسم الخدمات -->
+        <section class="projects-section" id="projects">
+            <h2>خدماتي <span>المميزة</span></h2>
+            <div class="projects-cards">
+                <div class="projects-card-box">
+                    <div class="projects-card-box__icons">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="projects-card-box__desc">
+                        <h4>تصميم المواقع</h4>
+                        <p>إنشاء مواقع ويب تفاعلية وجذابة تلبي احتياجاتك.</p>
+                    </div>
+                </div>
+        
+                <div class="projects-card-box">
+                    <div class="projects-card-box__icons">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="projects-card-box__desc">
+                        <h4>تطوير المواقع باستخدام Python وFlask</h4>
+                        <p>إنشاء مواقع ديناميكية مدعومة بالبيانات باستخدام Python وFlask لوظائف متقدمة.</p>
+                    </div>
+                </div>
+        
+                <div class="projects-card-box">
+                    <div class="projects-card-box__icons">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <div class="projects-card-box__desc">
+                        <h4>صيانة وتحسين المواقع</h4>
+                        <p>تقديم خدمات الصيانة والتحسين لضمان تشغيل موقعك بسلاسة وكفاءة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- جافا سكريبت -->
+    <script>
+        document.addEventListener("click", function (event) {
+            if (event.target.hasAttribute("data-theme")) {
+                const themeFile = event.target.getAttribute("data-theme");
+                const themeButtons = document.querySelectorAll("[data-theme]");
+                themeButtons.forEach((btn) => btn.classList.remove("active-theme"));
+                event.target.classList.add("active-theme");
+                document.getElementById("themeStylesheet").setAttribute("href", themeFile);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
